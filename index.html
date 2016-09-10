@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="startupTurkey.css">
+    <script src="jquery-3.1.0.min.js"></script>
+    <!--script src="./js/bootstrap.min.js"></script-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMpLDBQHbtjOmfWtGu9POzaqfLcRHTlSc"></script>
+    <script src="https://use.fontawesome.com/63212357f7.js"></script>
+    <title>StartupTurkey</title>
+</head>
+
+<body>
+    <div id="zavesa"></div>
+    <nav id="nav_bar">
+        <a href="http://www.startupturkey.com/">
+            <div class="logo"></div>
+        </a>
+        <div id="container">
+            <ul id="navLista">
+                <li><a href="#program">PROGRAM</a></li>
+                <li><a href="#speakers">SPEAKERS</a></li>
+                <li><a href="#startups">STARTUPS</a></li>
+                <li><a href="#finalists">FINALISTS</a></li>
+                <li><a href="#attendees">ATTENDEES</a></li>
+                <li><a href="#companies">COMPANIES</a></li>
+                <li><a href="#sponsors">SPONSORS</a></li>
+                <li>
+                    <a href="#startupapplication">
+                        <button class="dugmeStartup">STARTUP APPLICATION</button>
+                    </a>
+                </li>
+            </ul>
+            <div id="buttonMenu" class="dugme"><a href="#"><i class="fa fa-bars"></i></a></div>
+        </div>
+        <div id="OpenCloseMenu" class="hidenMenu">
+            <div id="buttonCloseMenu"><i class="fa fa-times"></i></div>
+            <div class="kolone">
+                <div id="logoOCMenu">
+                    <a href="http://www.startupturkey.com/">
+                        <div class="logo"></div>
+                    </a>
+                </div>
+                <ul id="prvaListaOCMenu" class="ListeOCMenu">
+                    <li><a href="http://www.startupturkey.com/about">ABOUT</a></li>
+                    <li><a href="http://www.startupturkey.com/attendees">ATTENDEES</a></li>
+                    <li><a href="http://www.startupturkey.com/program">PROGRAM</a></li>
+                    <li><a href="http://www.startupturkey.com/speakers">SPEAKERS</a></li>
+                    <li><a href="http://www.startupturkey.com/finalists">FINALIST STARTUPS</a></li>
+                    <li><a href="http://www.startupturkey.com/startups">STARTUPS</a></li>
+                    <li><a href="http://www.startupturkey.com/companies">COMPANIES</a></li>
+                    <li><a href="http://www.startupturkey.com/sponsors">SPONSORS</a></li>
+                    <li><a href="http://www.startupturkey.com/media">MEDIA</a></li>
+                    <li><a href="http://www.startupturkey.com/photos">PHOTOS AND VIDEOS</a></li>
+                    <li><a href="http://www.startupturkey.com/startupapplication">STARTUP APPLICATION</a></li>
+                </ul>
+                <ul id="drugaListaOCMenu" class="ListeOCMenu">
+                    <li><a href="http://www.startupturkey.com/contact">CONTACT</a></li>
+                    <li><a href="http://blog.startupturkey.com/">BLOG</a></li>
+                    <li>
+                        <a href="http://www.startupturkey.com/invitation">
+                            <button class="btnAtend">ATTEND</button>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="trecaListaOCMenu" class="ListeOCMenu">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/startupturkey">
+                            <i class="fa fa-facebook-square"></i> FACEBOOK
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/startupturkey">
+                            <i class="fa fa-twitter-square"></i> TWITTER
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://plus.google.com/+Startupturkey">
+                            <i class="fa fa-google-plus-square"></i> GOOGLE+
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/groups/StartupTurkey-7432627">
+                            <i class="fa fa-linkedin-square"></i> LINKEDIN
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="topOfPage">
+        <div class="maska"></div>
+        <div id="videoPozadina">
+            <video muted=false loop="loop" id="videoBck" autoplay="">
+                <source src="./img/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="tekstIblok">
+            <div class="okvir">
+                <h2>Very Best of Eurasia's</h2>
+                <h3>Startups &amp; Investors</h3>
+                <p>Early Spring 2017 Antalya - Turkey </p>
+                <div class="invitation">
+                    <input id="eMailInv" name="email" placeholder="Enter your email address to request invitation">
+                </div>
+                <div class="invitation">
+                    <button class="dugmeInv">REQUEST INVITATION</button>
+                </div>
+            </div>
+            <div id="volumeSwitch"></div>
+            <div id="strelicaDole"></div>
+        </div>
+    </section>
+    <section id="startups">
+        <div id="containerStartups">
+            <div class="pobedniciNaslov"><span class="winers">WINNERS</span></div>
+            <ul id="startupLista">
+                <li id="alotech">
+                    
+                        <div class="picture">
+                            <img src="./img/16070.png.png">
+                        </div>
+                        <div class="name">AloTech </div>
+                    
+                </li>
+                <br>
+                <li id="inlineBlokWinners">
+                    
+                        <div class="picture">
+                            <img src="./img/15920.png.png">
+                        </div>
+                        <div class="name">UrbanStat </div>
+                    
+                    
+                        <div class="picture">
+                            <img src="./img/16035.png.png">
+                        </div>
+                        <div class="name">Tamatem Inc </div>
+                    
+                </li>
+                <div class="pobedniciNaslov"><span class="winers">Audience Choice</span></div>
+                <li>
+                    
+                        <div class="picture">
+                            <img src="./img/5050.png.png">
+                        </div>
+                        <div class="name">Invidyo </div>
+                    
+                </li>
+            </ul>
+            <a href="http://www.startupturkey.com/finalists">
+                <button class="dugmeInv">SEE ALL FINALISTS</button>
+            </a>
+        </div>
+    </section>
+    <section id="description">
+        <div id="okvirDesc">
+            <div class="containerText">
+                <div class="banner">
+                    <h3>This event is made of networking</h3>
+                </div>
+                <div class="text">
+                    <p>
+                        Startup Turkey is the Demo Days of Startups from Turkey, Eurasia and MENA to the investors from all around the world. Since 2008, the very best of entrepreneurs, angel investors, venture capitals, accelerators, mentors, tech companies and media are gathering in Startup Turkey, Antalya.
+                    </p>
+                    <p>
+                        Startup Turkey, the leading startup event of the region, creates a perfect environment for networking. 700 invited people stay in a marvellous hotel for 3 days, in sunny Antalya. Conference with best speakers, speed networking, breakfasts &amp; dinners with founders and investors and closing party make Startup Turkey, a ‘must-go’ event for every player of the global internet eco-system.
+                    </p>
+                </div>
+            </div>
+            <div class="dugme">
+                <a href="http://www.startupturkey.com/invitation">
+                    <button class="dugmeInv2">REQUEST INVITATION</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="numbers">
+        <div class="maska"></div>
+        <div id="containerNum">
+            <div class="okvirNum">
+                <div id="num3" class="broj">
+                    <span>3</span> DAYS
+                </div>
+                <div id="num700" class="broj">
+                    <span>700</span> ATTENDEES
+                </div>
+                <div id="num150" class="broj">
+                    <span>150+</span> INVESTORS
+                </div>
+                <div id="num100" class="broj">
+                    <span>100+</span> STARTUPS
+                </div>
+            </div>
+            <div id="okvirBtn">
+                <a href="http://www.startupturkey.com/photos">
+                    <button class="dugmeStartup">SEE PHOTOS &amp; VIDEOS</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="speakers">
+        <div id="naslov">
+            <span class="winers">SPEAKERS</span>
+        </div>
+        <div class="podnaslov">
+            <p>Startup Turkey hosted world class speakers until now. Top Internet companies’ CEOs, founders of the most exciting startups and partners of VCs from all around the world will be on the stage to highlight newest trends that will design the future of internet driven business.</p>
+        </div>
+        <div id="lista">
+            <ul class="listaSpeakers">
+                <li>
+                    <img src="./img/16171.png">
+                    <div class="name">Nevzat Aydın </div>
+                    <div>
+                        CEO
+                    </div>
+                    <div>
+                        Yemeksepeti
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/14624.png">
+                    <div class="name">Murat Kansu </div>
+                    <div>
+                        General Manager
+                    </div>
+                    <div>
+                        Microsoft
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/10762.png">
+                    <div class="name">Murat Özyeğin </div>
+                    <div>
+                        Executive Board Member
+                    </div>
+                    <div>
+                        Fiba Holding A.Ş
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/11122.png">
+                    <div class="name">Ozan Sönmez </div>
+                    <div>
+                        New Ventures Accelerator
+                    </div>
+                    <div>
+                        KAUST
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/794.png">
+                    <div class="name">Numan Numan </div>
+                    <div>
+                        Managing Director
+                    </div>
+                    <div>
+                        212 Capital
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/3878.png">
+                    <div class="name">Hasan Aslanoba </div>
+                    <div>
+                        CEO
+                    </div>
+                    <div>
+                        Aslanoba Capital
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/14591.png">
+                    <div class="name">Chris Skinner </div>
+                    <div>
+                        Chairman
+                    </div>
+                    <div>
+                        The Financial Services Club
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/14643.png">
+                    <div class="name">Fares Ghandour </div>
+                    <div>
+                        Partner
+                    </div>
+                    <div>
+                        Wamda Capital
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/14580.png">
+                    <div class="name">Martin von Haller Groenbaek </div>
+                    <div>
+                        Partner
+                    </div>
+                    <div>
+                        Bird &amp; Bird
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/9851.png">
+                    <div class="name">Ross Kingsland </div>
+                    <div>
+                        CEO
+                    </div>
+                    <div>
+                        Inception Business Solutions
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <a href="http://www.startupturkey.com/speakers">
+                    <button class="dugmeInv">SEE ALL SPEAKERS</button>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="press">
+        <div class="maskaPress"></div>
+        <div class="bannerPress">
+            <p class="txtPress">
+                Startup Turkey IS one of the best European events for Startups
+            </p>
+            <div id="pressLogoContainer">
+                <div class="pressLogo">
+                    <img src="./img/tech-logo.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="investors">
+        <div class="okvirInv">
+            <div class="naslov">
+                <span class="winers">INVESTORS</span> FROM LAST YEARS
+            </div>
+            <div class="podnaslov">
+                <p>The most important VCs and Angel Investors from US, Eurasia and MENA will be there to meet the most promising startups from more than 20 countries.</p>
+            </div>
+            <div class="okvirListaInv">
+                <ul class="listaInv">
+                    <li>
+                        <img src="./img/1973.png">
+                    </li>
+                    <li>
+                        <img src="./img/1974.png">
+                    </li>
+                    <li>
+                        <img src="./img/1965.png">
+                    </li>
+                    <li>
+                        <img src="./img/1976.png">
+                    </li>
+                    <li>
+                        <img src="./img/1977.png">
+                    </li>
+                    <li>
+                        <img src="./img/1978.png">
+                    </li>
+                    <li>
+                        <img src="./img/1980.png">
+                    </li>
+                    <li>
+                        <img src="./img/1981.png">
+                    </li>
+                    <li>
+                        <img src="./img/1972.png">
+                    </li>
+                    <li>
+                        <img src="./img/2005.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="startupsPromo">
+        <div class="maskaPress"></div>
+        <div id="tekstStartupPromo">
+            <h2>STARTUP CHALLENGE
+                </h2>
+            <p>
+                The program will start on the <b>25th of February
+                    </b>for the selected startups.
+                <br>
+                <br> After the training session on <b>25th</b>, startups will be pitching to the investors in a closed meeting on <b>26th</b>. 15 startups to be selected will be finalists and they will pitch on stage to the jury of Startup Turkey Challenge in the most attractive part of the conference.
+            </p>
+            <a href="http://www.startupturkey.com/startupapplication">
+                <button class="dugmeStartup">STARTUP APPLICATION</button>
+            </a>
+        </div>
+        <div id="pozadinskiTekst">
+            <h2>STARTUP CHALLENGE
+                </h2>
+            <p>
+                The program will start on the <b>25th of February
+                    </b>for the selected startups.
+                <br>
+                <br> After the training session on <b>25th</b>, startups will be pitching to the investors in a closed meeting on <b>26th</b>. 15 startups to be selected will be finalists and they will pitch on stage to the jury of Startup Turkey Challenge in the most attractive part of the conference.
+            </p>
+            <a href="http://www.startupturkey.com/startupapplication">
+                <div class="nevidljivo">STARTUP APPLICATION</div>
+            </a>
+        </div>
+        <div>
+            <p> </p>
+        </div>
+    </section>
+    <section id="startups2">
+        <div class="naslov">
+            <span class="winers">STARTUPS</span>
+        </div>
+        <div class="podnaslov">
+            <p>The most promising startups from several countries will be on the stage. Seed and early stage startups will be pitching to the investors to accelerate their growth.</p>
+        </div>
+        <div class="ista">
+            <ul class="listaStartup">
+                <li>
+                    <div class="slika">
+                        <img src="./img/15865.png.png">
+                    </div>
+                    <div class="name">Bijou </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15866.jpg.png">
+                    </div>
+                    <div class="name">Muslimface </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15867.png.png">
+                    </div>
+                    <div class="name">Skilzz.co </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15868.jpg.png">
+                    </div>
+                    <div class="name">Showroomist </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15869.jpg.png">
+                    </div>
+                    <div class="name">Agrotics </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15876.jpg.png">
+                    </div>
+                    <div class="name">insparkus </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15875.png.png">
+                    </div>
+                    <div class="name">iklim.co </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15873.png.png">
+                    </div>
+                    <div class="name">Qoloni </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15864.png.png">
+                    </div>
+                    <div class="name">Wordapp </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15870.png.png">
+                    </div>
+                    <div class="name">Fidelo </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15848.png.png">
+                    </div>
+                    <div class="name">Beyond </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15849.JPG.png">
+                    </div>
+                    <div class="name">Eye Track </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/16256.png.png">
+                    </div>
+                    <div class="name">Nara Educational Technologies </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15851.jpg.png">
+                    </div>
+                    <div class="name">Smart Assist </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15852.png.png">
+                    </div>
+                    <div class="name">Beatrips </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15854.png.png">
+                    </div>
+                    <div class="name">Bean </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15855.png.png">
+                    </div>
+                    <div class="name">Mobil Exper </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/16246.jpg.png">
+                    </div>
+                    <div class="name">Fiza </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15857.png.png">
+                    </div>
+                    <div class="name">İşini Sev </div>
+                </li>
+                <li>
+                    <div class="slika">
+                        <img src="./img/15853.png.png">
+                    </div>
+                    <div class="name">Sukolay </div>
+                </li>
+            </ul>
+            <div id="dugmestartupOkvir">
+                <div id="dugmestartup">
+                    <a href="http://www.startupturkey.com/startups">
+                        <button class="dugmeInv">SEE ALL STARTUPS</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sponsors">
+        <div class="naslov">
+            <span class="winers">SPONSORS</span>
+        </div>
+        <div class="okvirListaSponzori">
+            <ul class="ListaSponzori">
+                <li>
+                    <a target="_blank">
+                        <img src="./img/14609.png"></a>
+                </li>
+                <li>
+                    <a href="http://www.ariteknokent.com.tr/tr" target="_blank">
+                        <img src="./img/8746.png"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="okvirListaSponzori">
+            <ul class="ListaSponzori">
+                <li>
+                    <a href="http://www.microsoft.com/" target="_blank">
+                        <img src="./img/2027.png"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="okvirListaSponzori">
+            <ul class="ListaSponzori">
+                <li>
+                    <a href="http://bkm.com.tr/" target="_blank">
+                        <img src="./img/14593.png"></a>
+                </li>
+                <li>
+                    <a href="http://www.samsung.com/tr/home" target="_blank">
+                        <img src="./img/14586.png"></a>
+                </li>
+                <li>
+                    <a href="http://www.paypal.com/" target="_blank">
+                        <img src="./img/8649.png"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="okvirListaSponzori">
+            <ul class="ListaSponzori">
+                <li>
+                    <a href="http://www.payu.com.tr/?refid=101&amp;gclid=CPzSvZrG98MCFWfmwgoduR8AYg" target="_blank">
+                        <img src="./img/14610.png"></a>
+                </li>
+                <li>
+                    <a href="http://radore.com/en" target="_blank">
+                        <img src="./img/8739.png"></a>
+                </li>
+                <li>
+                    <a href="http://www.oasis500.com/" target="_blank">
+                        <img src="./img/8669.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.iyzico.com/" target="_blank">
+                        <img src="./img/3271.png"></a>
+                </li>
+                <li>
+                    <a href="http://www.ininal.com/en/" target="_blank">
+                        <img src="./img/4863.png"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="naslov" style="margin-top: 20px;"><span class="winers">PARTNERS</span></div>
+        <div class="okvirListaSponzori">
+            <ul class="ListaSponzori">
+                <li>
+                    <a href="http://www.marjinal.com.tr/" target="_blank">
+                        <img src="./img/5472.png"></a>
+                </li>
+                <li>
+                    <a target="_blank">
+                        <img src="./img/5475.png"></a>
+                </li>
+                <li>
+                    <a href="http://16on9.com/" target="_blank">
+                        <img src="./img/11192.png"></a>
+                </li>
+                <li>
+                    <a href="http://www.duzeyturizm.com/" target="_blank">
+                        <img src="./img/5329.png"></a>
+                </li>
+                <li>
+                    <a href="http://bilgitivi.com/" target="_blank">
+                        <img src="./img/8910.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.bizzabo.com/" target="_blank">
+                        <img src="./img/4809.png"></a>
+                </li>
+                <li>
+                    <a href="http://www.securedrive.com.tr/" target="_blank">
+                        <img src="./img/5474.png"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="naslov" style="margin-top: 20px;"><span class="winers">MEDIA PARTNERS</span></div>
+        <div class="okvirListaSponzori">
+            <ul class="ListaSponzori">
+                <li>
+                    <a href="http://www.entrepreneur.com/me" target="_blank">
+                        <img src="./img/14589.png"></a>
+                </li>
+                <li>
+                    <a href="http://www.wamda.com/" target="_blank">
+                        <img src="./img/5241.png"></a>
+                </li>
+                <li>
+                    <a href="http://www.digitalage.com.tr/" target="_blank">
+                        <img src="./img/11281.png"></a>
+                </li>
+                <li>
+                    <a href="http://www.startupturkey.com/www.idgmediawakhan.com" target="_blank">
+                        <img src="./img/16415.png"></a>
+                </li>
+                <li>
+                    <a href="http://shiftdelete.net/" target="_blank">
+                        <img src="./img/14719.png"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="learn-more">
+        <div class="okvirLearn">
+            <div class="naslovLearn">Learn More About Startup Turkey</div>
+            <div class="podnaslovLearn">Startup Turkey is the Demo Day of Eurasian Startups and a gathering of the very best of startups, investors and executives.</div>
+            <div class="imgLearn">
+                <img src="./img/dergi.png">
+            </div>
+            <div>
+            	<a href="http://www.startupturkey.com/Content/files/startupturkey2016.pdf" target="_blank">
+                <button class="dugmeInv2">DOWNLOAD THE PDF</button>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="kosina"></div>
+    <section id="Linkovi">
+        
+            <div class="naslovLinkovi">FEATURED IN</div>
+            <div class="okvirLinkovi">
+            <ul class="listLinks">
+                    <li>
+                        <a href="http://www.forbes.com/sites/elmirabayrasli/2013/02/18/startup-turkey/" target="_blank">
+                            <img src="./img/2036.png"></a>
+
+                    </li>
+                    <li>
+                        <a href="http://blogs.wsj.com/tech-europe/2012/02/20/startup-turkey-30-second-pitches/" target="_blank">
+                            <img src="./img/2037.png"></a>
+
+                    </li>
+                    <li>
+                        <a href="http://techcrunch.com/2014/01/05/for-your-diary-the-best-european-events-for-startups-in-2014/" target="_blank">
+                            <img src="./img/2038.png"></a>
+
+                    </li>
+                    <li>
+                        <a href="http://www.npr.org/blogs/parallels/2014/10/25/356646970/iranian-entrepreneurs-make-pitches-that-are-just-practice-for-now" target="_blank">
+                            <img src="./img/2039.png"></a>
+
+                    </li>
+                    <li>
+                        <a href="http://www.wired.co.uk/news/archive/2014-09/30/social-media-startups-istanbul" target="_blank">
+                            <img src="./img/2040.png"></a>
+
+                    </li>
+                    <li>
+                        <a href="http://www.bloomberg.com/news/2014-02-26/while-turkey-s-government-cries-coup-tech-startups-keep-coding.html" target="_blank">
+                            <img src="./img/2041.png"></a>
+
+                    </li>
+            </ul>
+            </div>
+        
+    </section>
+
+
+
+
+<footer>
+        <div class="maskaFooter"></div>
+        <div class="okvirFooter">
+            <div class="InvFormAndSocNet">
+            	<div class="invForm">
+                 <div class="invitation">
+                    <input id="eMailInv" name="email" placeholder="Enter your email address to request invitation">
+                </div>
+                <div class="invitation">
+                    <button class="dugmeInv">COUNT ME IN</button>
+                </div>
+                </div>
+               
+                	<div class="okvirSocNet">
+                    <ul class="listSocNet">
+                        <li><a target="_blank" href="https://www.facebook.com/startupturkey"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/startupturkey"><i class="fa fa-twitter-square"></i></a></li>
+                        <li><a target="_blank" href="https://plus.google.com/+Startupturkey"><i class="fa fa-google-plus-square"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/groups/StartupTurkey-7432627"><i class="fa fa-linkedin-square"></i></a></li>
+                    </ul>
+
+                </div>
+
+                </div>
+            
+            <div class="okvirListeFooter">
+                <div class="ListeFooter">
+                    <ul class="listaFooter">
+                        <li class="naslovListe">Startup Turkey</li>
+                        <li><a href="http://www.startupturkey.com/about">About</a></li>
+                        <li><a href="http://www.startupturkey.com/speakers">Speakers</a></li>
+                        <li><a href="http://www.startupturkey.com/attendees">Attendees</a></li>
+                        <li><a href="http://www.startupturkey.com/startups">Startups</a></li>                        
+                        <li><a href="http://www.startupturkey.com/companies">Companies</a></li>
+                        <li><a href="http://www.startupturkey.com/startupapplication">Startup Application</a></li>
+                    </ul>
+              
+                    <ul class="listaFooter">
+                        <li class="naslovListe">Information</li>
+                        <li><a href="http://www.startupturkey.com/contact">Contact</a></li>
+                        <li><a href="http://www.startupturkey.com/terms">Terms and Conditions</a></li>
+                        <li><a href="http://www.startupturkey.com/sponsors">Sponsorship</a></li>
+                        <li><a href="http://www.startupturkey.com/media">Media</a></li>
+                    </ul>
+               
+                    <ul class="listaFooter">
+                        <li class="naslovListe">Past Events</li>
+                        <li><a href="http://2016.startupturkey.com/">Startup Turkey 2016</a></li>
+                        <li><a href="http://2015.startupturkey.com/">Startup Turkey 2015</a></li>
+                        <li><a href="http://www.startupistanbul.com/">Startup Istanbul</a></li>
+                    </ul>
+                
+                    <ul class="listaFooter">
+                        <li class="naslovListe">Links</li>
+                        <li><a href="http://blog.startupturkey.com/">Blog</a></li>
+                        <li><a href="http://www.etohum.com/">Etohum</a></li>
+
+                    </ul>
+                </div>
+                <div class="mobidik">
+                    <div class="mobidikpro">
+                        <a href="http://www.mobidikpro.com/">
+                            <img src="./img/mobidikpro.png"></a>
+                    </div>
+                </div>
+            </div>       
+       </div>
+       </div>
+    </footer>
+
+
+
+
+</body>
+<script type="text/javascript" src="startupTurkey.js"></script>
+
+</html>
