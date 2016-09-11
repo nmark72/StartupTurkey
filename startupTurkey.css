@@ -1419,6 +1419,23 @@ float: right;
     width: 250px;
 }
 
+.ListaSponzori li img
+{
+    max-width: 250px;
+}
+
+   .okvir {
+  
+    top:20%;
+
+}
+
+.okvir h2
+{
+
+    margin-top: 3%;
+}
+
 }
 
     
