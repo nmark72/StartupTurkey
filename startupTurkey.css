@@ -221,7 +221,7 @@ nav .logo {
     color: #fff;
     font-size: 40px;
     position: absolute;
-    z-index: 4;
+    z-index: 50;
     right: 40px;
     bottom: 100px;
     width: 40px;
@@ -233,6 +233,7 @@ nav .logo {
 #volumeSwitch.sound:before {
     font-family: FontAwesome;
     content: "";
+    z-index: 50;
 }
 
 #strelicaDole:before {
