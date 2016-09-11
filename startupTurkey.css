@@ -261,7 +261,7 @@ nav .logo {
     font-weight: 300;
     text-align: center;
     margin-bottom: 0;
-    z-index: 9990;
+    z-index: 9;
 }
 
 .okvir h2
@@ -269,11 +269,13 @@ nav .logo {
 
     font-size: 72px;
     margin-top: 5%;
+    line-height: 1;
 }
 
 .okvir h3
 {
    font-size: 62px;
+   line-height: 1;
 }
 
 .okvir p
@@ -1323,6 +1325,7 @@ float: right;
 {
     display: flex;
     flex-direction: column;
+    width:80%;
 }
 .okvirSocNet
 {
@@ -1333,8 +1336,15 @@ float: right;
 {
     position: relative;
     float:left;
-    margin-left: 7vw;
+    margin-left: 13vw;
+    padding: 0;
+    width: 250px;
 
+}
+
+.listSocNet li
+{
+    float: left;
 }
 
 .okvirListeFooter 
@@ -1400,8 +1410,16 @@ float: right;
 {
    max-width:250px 
 }
+.invForm
+{
+    width: 250px;
+}
+#eMailInv
+{
+    width: 250px;
 }
 
+}
 
     
 
